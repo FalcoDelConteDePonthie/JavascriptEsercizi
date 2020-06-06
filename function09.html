@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<style type="text/css">
+		
+		
+		</style>
+	</head>
+	
+	<body>
+		<input id="num1" type="number">
+		<input id="num2" type="number">
+		<button id="buttSum">Sum!</button>
+		<button id="buttClear">Clear</button>
+		<script type="text/javascript">
+		function myAlert(a,b){
+			var c = Number(a) + Number(b);
+			alert("La somma dei numeri è " + c + "!");
+		}
+		
+		document.getElementById("buttSum").onclick = function(){
+			var a = document.getElementById("num1").value;
+			var b = document.getElementById("num2").value;
+			myAlert(a,b);
+		}		
+		document.getElementById("buttClear").onclick = function(){
+			document.getElementById("num1").value = "";
+			document.getElementById("num2").value = "";
+		}	
+		
+		</script>
+	</body>
+</html>
