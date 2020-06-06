@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<style type="text/css">
+		
+		
+		</style>
+	</head>
+	
+	<body>
+		<p id="messaggio"></p>
+		<script type="text/javascript">
+			// Definisco un vettore e ci inserisco 6 elementi di tipo stringa con testo "Ciclo" + numero
+			// dell'iterazione.
+			document.getElementById("messaggio").innerHTML = "Apri la console (F12) per vedere il vettore!";
+			var vettore = new Array();
+			var i = 0;
+			while(i <= 5){
+				vettore.push("Ciclo"+i);
+				i = i+1;
+			}			
+			console.log(vettore);
+		</script>
+	</body>
+</html>
