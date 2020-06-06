@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<style type="text/css">
+		
+		
+		</style>
+	</head>
+	
+	<body>
+		<p id="mex">How many fingers you holding up?[0-6]</p>
+		<p>
+		<select name="Numeri" id="myNumber">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<button id="guess">Guess!</Button></p>
+		
+		<script type="text/javascript">
+			document.getElementById("guess").onclick =function(){
+				var myNumber = document.getElementById("myNumber").value;
+				var gotIt = false;
+				var numIter = 0;
+				//Sceglie un numero casuale tra 0/5
+				while(!gotIt){
+					numIter = numIter + 1;
+					var guess = Math.random() * 6;
+					guess = guess = Math.floor(guess);
+					
+					if(guess == myNumber)
+					{
+						gotIt = true;
+						alert("Comlimenti hai indovinato il numero con " + numIter + " iterazioni!");
+					
+					}
+					else{
+						gotIt = false;
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
