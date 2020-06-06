@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<style type="text/css">
+		
+		
+		</style>
+	</head>
+	
+	<body>
+		<p><input type="text" id="guess"> <button id="checkGuess">Guess!</button></p>
+		<script type="text/javascript">
+			document.getElementById("checkGuess").onclick=function(){
+				//Valore tra 0 e 1
+				var guessValue = Math.random();
+				//Valore tra 0 e 6
+				guessValue = guessValue * 6;
+				//Valore tra 0 e 5
+				guessValue = Math.floor(guessValue);
+				if(document.getElementById("guess").value == guessValue){
+					alert("Complimenti hai indovinato");
+				}				
+				else{
+					alert("NO! il numero era " + guessValue);
+				}
+				
+			}
+		
+		</script>
+	</body>
+</html>
