@@ -7,7 +7,6 @@ function getRandomColor() {
 	}
 	return color;
 }
-
 function makeShapeAppear(){
 	if(Math.random() > 0.5){
 		document.getElementById("shape").style.borderRadius = "50%";
