@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<style type="text/css">
+		
+		
+		</style>
+	</head>
+	
+	<body>
+		<input id="txt-input" type="text">
+		<button id="bottone">change the text</button>
+		<p id="parag">this is some text</p>
+		<script type="text/javascript">
+			document.getElementById("bottone").onclick = function(){
+				var textEnter = "";
+				textEnter = document.getElementById("txt-input").value;				
+				document.getElementById("parag").innerHTML = textEnter;
+			}
+		</script>
+	</body>
+</html>
